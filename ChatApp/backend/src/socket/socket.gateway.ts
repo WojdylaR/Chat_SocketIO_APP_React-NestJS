@@ -17,7 +17,7 @@ export class SocketGateway {
     console.log(`Client connected: ${client.id}`)
   }
 
-  handleDisConnect(client: Socket){
+  handleDisconnect(client: Socket){
     console.log(`Client disconnect: ${client.id}`)
   }
   @SubscribeMessage('message')
