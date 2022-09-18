@@ -14,7 +14,7 @@ function Chat(){
     socket.on('connect', () => console.log('connected'))
     
     useEffect(() => {socket.on('message', function(id, data){
-        return setChat(chat + '\n' + id + ": " + data)})
+        return setChat(chat + '\n' + id + " message: " + data)})
         //messages?.innerHTML === messages + `<p> ${id} : ${data} </p>`});
     }, )
     return (
