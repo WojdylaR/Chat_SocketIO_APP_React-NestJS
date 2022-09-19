@@ -25,4 +25,6 @@ export class SocketGateway {
     console.log(client.id + " = " + data)
     this.server.emit('message', client.id, data)
   }
+
+  
 }
