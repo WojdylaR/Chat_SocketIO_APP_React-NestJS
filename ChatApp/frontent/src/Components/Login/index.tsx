@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 
 function Login(id: any){
-    const newUser = () => axios.post('http://127.0.0.1', {id: id, username: document.getElementById("id")})
+    const newUser = () => axios.post('http://127.0.0.1:3000/socket/createuser', {id: id, username: document.getElementById("id")})
     .then(function(response){
         console.log(response)
     })
