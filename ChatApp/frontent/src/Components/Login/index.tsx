@@ -12,7 +12,15 @@ function Login(id: any){
 
     return (
         <div className="Login" id="Login">
-            <input placeholder="Username" /><button id="username" onClick={() => newUser()}>New User</button>
+            <p className="LoginMsg"> 
+                Bienvenue,<br /> pour pouvoir rejoindre le chat, tu as besoin de rentrer un nom d'utilisateur
+            </p>
+            <p className="LoginInput">
+                <input placeholder="Username" />
+                <button id="username" onClick={() => newUser()}>
+                    New User
+                </button>
+            </p>
         </div>
     )
 }
