@@ -13,7 +13,7 @@ function Login(id: any){
     return (
         <div className="Login" id="Login">
             <p className="LoginMsg"> 
-                Bienvenue,<br /> pour pouvoir rejoindre le chat, tu as besoin de rentrer un nom d'utilisateur
+                <h2 >Bienvenue,<br /> pour pouvoir rejoindre le chat, tu as besoin de rentrer un nom d'utilisateur</h2>
             </p>
             <p className="LoginInput">
                 <input placeholder="Username" />

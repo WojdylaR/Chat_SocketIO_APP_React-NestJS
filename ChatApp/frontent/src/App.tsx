@@ -4,12 +4,14 @@ import Chat from "./pages/Chat";
 import GlobalStyle from "./Styles/Global";
 
 function App(){
-    return (
+    return ( 
         <div>
             <GlobalStyle />
+            <div className="all">
             <Routes>
                 <Route path="/" element={<Chat />} />
             </Routes>
+            </div>
         </div>
     )
 }

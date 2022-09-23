@@ -1,27 +1,32 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-div {
+.all { 
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    position: absolute;
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
 }
 
 .Login {
     text-align: center;
+    color:white;
     vertival-align: center;
-
-    color: white;
-}
-
-.LoginMsg {
     position: relative;
-    top: 20%;
-    font-size: 200%;
-    
+    top: 25%;
+    font-size: 150%;
 }
+
 
 .LoginInput {
-    position: relative;
-    top: 50%;
+    position: absolute;
+    top: 200%;
+    width:100%;
 }
 
 `
