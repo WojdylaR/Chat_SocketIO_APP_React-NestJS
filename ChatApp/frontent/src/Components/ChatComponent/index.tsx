@@ -29,12 +29,14 @@ function ChatComponent(){
 return(
     
     <div className="ChatComponent">
-        <input type="text" id="message"/>
-        <button onClick={() => sendMessage(document.getElementById('message'))}>
-            Send
-        </button>
-        <div >
+        <div className="Chat">
             {chat}
+        </div>
+        <div className="ButtonChat">
+            <input type="text" id="message" className="InputChat"/>
+            <button className="ButtonSendChat" onClick={() => sendMessage(document.getElementById('message'))}>
+                Send
+            </button>
         </div>
     </div>
 )

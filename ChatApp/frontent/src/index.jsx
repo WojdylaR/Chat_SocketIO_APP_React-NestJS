@@ -6,7 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import GlobalStyle from './Styles/Global'
 import App from './App'
 
-localStorage.setItem('login', "false")
+localStorage.setItem('login', "true")
 
 ReactDOM.render(
     <React.StrictMode>

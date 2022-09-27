@@ -29,6 +29,35 @@ const GlobalStyle = createGlobalStyle`
     width:100%;
 }
 
+.MenuLog {
+    position: absolute;
+    background-color: #c78686; 
+    height: 100%;
+    width: 15%;
+}
+
+.ChatComponent{
+    position: absolute;
+    left: 15%;
+    height: 100%;
+    width: 85%;
+}
+
+.ButtonChat {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.InputChat {
+    width: 90%;
+}
+
+.ButtonSendChat {
+    position: absolute;
+    width: 10%;
+}
+
 `
 
 
