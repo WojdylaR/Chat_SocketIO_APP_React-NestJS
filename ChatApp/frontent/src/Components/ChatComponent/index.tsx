@@ -6,11 +6,11 @@ import { io } from "socket.io-client";
 const socket = io("http://localhost:3000")
 
 function ChatComponent(){
+    const toto = <p>yo</p>
     let user:any
-    const [chat, setChat] = useState("chat :")
+    const [chat, setChat] = useState(<div></div>)
     let sendMessage = function(message:any) {
-        console.log('send a msg : ' + message.value)
-        socket.emit('message', message.value, "otot")
+        socket.emit('message', message.value)
         console.log("message send")
     }
     socket.on('connect', () => console.log('connected'))
@@ -24,8 +24,9 @@ function ChatComponent(){
         .catch(function(error){
             console.log(error)
         });
-        return setChat(chat + '\n' + id + " message: " + data)})
+        return setChat(<div> {chat} <p className="Msg"> {id} : {data}</p></div>)})
     }, )
+
 return(
     
     <div className="ChatComponent">

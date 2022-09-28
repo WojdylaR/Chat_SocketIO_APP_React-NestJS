@@ -56,6 +56,16 @@ const GlobalStyle = createGlobalStyle`
 .ButtonSendChat {
     position: absolute;
     width: 10%;
+
+}
+
+.Chat {
+    position: absolute
+}
+
+.Msgx {
+    position: relative;
+    background-color: #c78686;
 }
 
 `
